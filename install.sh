@@ -157,6 +157,8 @@ on_install() {
   unzip -o "$ZIPFILE" -d $TMPDIR >&2
   cd $TMPDIR
   mv -f mm /data/media/0/
+  mv -f mm-apatch /data/media/0/
+  mv -f mm-ksu /data/media/0/
   mv License* README* $MODPATH/
 
   set +euxo pipefail  
