@@ -1,4 +1,4 @@
-# Magisk Manager for Recovery Mode (mm)
+# Apatch-KernelSU-Magisk Manager for Recovery Mode (mm)
 <p align="left">
     <a href="https://github.com/Rikj000/Magisk-Manager-for-Recovery-Mode/releases">
         <img src="https://img.shields.io/github/downloads/Rikj000/Magisk-Manager-for-Recovery-Mode/total?label=Total%20Downloads&logo=github" alt="Total Releases Downloaded from GitHub">
@@ -84,13 +84,10 @@ Updating through [manual download](#manual-download) is also possible, but not p
 2. Open up a terminal session from within your custom recovery
 3. Run the `*/mm` or `sh /sdcard/mm` command to start managing your modules. 
 4. Simply follow the instructions/wizard, everything is interactive!
+5. Apatch and KernelSU access by sh mm-apatch and sh mm-ksu
 
 
-## Build
-```bash
-BUILD_NUMBER=<enter-build-number> zip MagiskManagerForRecovery_v"$BUILD_NUMBER"_"$(date +'%Y%m%d0')" -9r * -x .*
-```
-
+## All stuff below only for magisk mm original module info
 
 ## Links
 **Current - Rikj000**
