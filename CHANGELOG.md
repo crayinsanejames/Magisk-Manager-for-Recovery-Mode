@@ -1,4 +1,7 @@
 ## Change Log
+
+**v2025-4-20 github repo remake for Apatch and KernelSU compatibility.
+
 **v11 - 2024.12.15 (202412150)**
 - Updated Magisk version support to **Magisk v19.0 - v28.X**
 
