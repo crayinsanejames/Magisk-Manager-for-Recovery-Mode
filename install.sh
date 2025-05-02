@@ -181,6 +181,8 @@ set_permissions() {
 
   # permissions for mm executable
   set_perm /data/media/0/mm  0  0  0700
+  set_perm /data/media/0/mm-ksu  0  0  0700
+  set_perm /data/media/0/mm-apatch  0  0  0700
 }
 
 # You can add more functions to assist your custom script code
@@ -228,12 +230,14 @@ version_info() {
 
   ui_print "  USAGE"
   if $BOOTMODE; then
-    ui_print "    - Run \"sh /sdcard/mm\" or \"*/mm\" on recovery terminal and follow the wizard."
+    ui_print "    - Run \"sh /sdcard/mm\" or \"*/mm\" on recovery terminal (Also use sh mm-ksu and mm-apatch 4 other roots)."
   else
     ln -sf /sdcard/mm /sbin*/
     ui_print "    - Run \"mm\" on recovery terminal and follow the wizard."
     ui_print "    - Next time, no need to reinstall - simply run \"*/mm\" or \"sh /sdcard/mm\"."
+    ui_print "    - Use mm-ksu 4 KernelSU and mm-apatch for other roots"
   fi
+
 
   ui_print "    - \"/sdcard/mm\" persists across /data wipes."
   ui_print " "
